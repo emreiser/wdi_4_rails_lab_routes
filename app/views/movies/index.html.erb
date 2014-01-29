@@ -1,0 +1,7 @@
+<h1>Movies</h1>
+
+<% @movies.each do |movie| %>
+	<h3><%= movie.title %></h3>
+	<p><%= link_to "Add Comment", new_movie_comment_path(movie.id) %><p>
+
+<% end %>

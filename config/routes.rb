@@ -1,4 +1,11 @@
 Wdi4RailsLabRoutes::Application.routes.draw do
+
+
+  resources :movies do
+    resources :comments
+  end
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

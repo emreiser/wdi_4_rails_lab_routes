@@ -1,0 +1,9 @@
+<h1>Comments</h1>
+
+<% @comments.each do |comment| %>
+	<ul>
+		<li><%= comment.body %><br>
+		(<%= comment.movie_id %>)
+		</li>
+	</ul>
+<% end %>
